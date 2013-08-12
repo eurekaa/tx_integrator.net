@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML xmlns:MSHelp="http://msdn.microsoft.com/mshelp" DIR="LTR"><HEAD>
+<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com">
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=UTF-8">
+<TITLE>Spedizione.TXCreateObject Method</TITLE>
+<xml>
+<MSHelp:TOCTitle Title="Spedizione.TXCreateObject Method"/>
+<MSHelp:RLTitle Title="Spedizione.TXCreateObject Method"/>
+<MSHelp:Keyword Index="A" Term="frlrfVolcanoTXSyncModelSpedizioneClassTXCreateObjectTopic"/>
+<MSHelp:Keyword Index="K" Term="Spedizione.TXCreateObject Method"/>
+<MSHelp:Keyword Index="K" Term="Volcano.TXSync.Model.Spedizione.TXCreateObject Method"/>
+<MSHelp:Keyword Index="F" Term="Volcano.TXSync.Model.Spedizione.TXCreateObject"/>
+<MSHelp:Keyword Index="F" Term="Spedizione.TXCreateObject"/>
+<MSHelp:Keyword Index="F" Term="Volcano.TXSync.Model.Spedizione.Spedizione.TXCreateObject"/>
+<MSHelp:Attr Name="DevLang" Value="VB"/>
+<MSHelp:Attr Name="DevLangVers" Value="kbLangVB"/>
+<MSHelp:Attr Name="DocSet" Value="Visual Basic"/>
+<MSHelp:Attr Name="DocSet" Value="Visual Studio"/>
+<MSHelp:Attr Name="DocSet" Value="VSM"/>
+<MSHelp:Attr Name="Product" Value="VB"/>
+<MSHelp:Attr Name="ProductVers" Value="kbVBp700"/>
+<MSHelp:Attr Name="Product" Value="VSA"/>
+<MSHelp:Attr Name="ProductVers" Value="kbVSA"/>
+<MSHelp:Attr Name="Technology" Value="ManagedCode"/>
+<MSHelp:Attr Name="TechnologyVers" Value="kbManagedCode"/>
+<MSHelp:Attr Name="TopicType" Value="kbSyntax"/>
+<MSHelp:Attr Name="TargetOS" Value="Windows"/>
+<MSHelp:Attr Name="Locale" Value="kbEnglish"/>
+</xml>
+<META name="rtfFileName" content="">
+<META NAME="save" CONTENT="history">
+<!--CSS_START-->
+<SCRIPT SRC="MSHelp/scripts/dtuelink.js"></SCRIPT>
+<!--CSS_END-->
+<SCRIPT language="JavaScript">
+function indent(level) {
+	for (i=1; i<=level; i++) {
+		document.write("&nbsp;&nbsp;&nbsp;");
+	}
+}
+</SCRIPT>
+</HEAD>
+<body style="direction: ltr;" topmargin=0 id="bodyID" class = "dtBODY"><!--NONSCROLLING BANNER START-->
+<div id="nsbanner">
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>TXSync</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1"><A NAME="frlrfVolcanoTXSyncModelSpedizioneClassTXCreateObjectTopic"></A>Spedizione.TXCreateObject Method</H1>
+</div></div>
+<!--NONSCROLLING BANNER END-->
+
+<DIV id="nstext" valign="bottom"><!---->
+
+<P>Crea e riempie l'oggetto rappresentante la spedizione da mandare a txmax.</P>
+
+
+
+
+
+<PRE class="syntax"><SPAN class="lang">[C#]
+</SPAN><B>private <a href=".html">Insert_new_place_on_trip</a> TXCreateObject()</B></PRE>
+
+
+
+
+
+
+
+
+
+<H4 class="dtH4">Returns</H4>
+<P>Insert_new_place_on_trip</P>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H4 class="dtH4">Source code</H4>
+
+<pre class="code"><SPAN class="lang">[C#]</SPAN>
+private Insert_new_place_on_trip TXCreateObject() {&nbsp;<br>&nbsp;<br>    // preparo la spedizione                &nbsp;<br>    PlaceInsert place = new PlaceInsert();&nbsp;<br>    place.PlaceId = ConfigurationManager.AppSettings[&quot;TX_ID_PREFIX&quot;] + this.Id;&nbsp;<br>    place.CustomNr = this.Progressivo;&nbsp;<br>    place.DriverDisplay = this.KeySpedizione;&nbsp;<br>    place.Comment = this.Note;&nbsp;<br>&nbsp;<br>    // inserisco la posizione (geo coordinate)&nbsp;<br>    double latitudine = double.Parse(this.DestinazioneGeoLoc.Split(',')[0].Replace(&quot;.&quot;, &quot;,&quot;));&nbsp;<br>    double longitudine = double.Parse(this.DestinazioneGeoLoc.Split(',')[1].Replace(&quot;.&quot;, &quot;,&quot;));&nbsp;<br>    place.Position = new Position() { Latitude = latitudine, Longitude = longitudine };&nbsp;<br>&nbsp;<br>    // inserisco l'activity (carico o scarico)&nbsp;<br>    int activityId = 0;&nbsp;<br>    if (this.Tipo == &quot;ODR&quot;) {&nbsp;<br>        activityId = Convert.ToInt32(ConfigurationManager.AppSettings[&quot;TX_ACTIVITY_PLACE_LOAD&quot;]);&nbsp;<br>    } else {&nbsp;<br>        activityId = Convert.ToInt32(ConfigurationManager.AppSettings[&quot;TX_ACTIVITY_PLACE_UNLOAD&quot;]);&nbsp;<br>    }&nbsp;<br>    place.Activity = new ActivityPlace() { ID = activityId };&nbsp;<br>&nbsp;<br>    // inserisco la spedizione nel viaggio&nbsp;<br>    Insert_new_place_on_trip insertPlace = new Insert_new_place_on_trip();&nbsp;<br>    insertPlace.TripID = ConfigurationManager.AppSettings[&quot;TX_ID_PREFIX&quot;] + this.IdViaggio;&nbsp;<br>    insertPlace.TransferDate = null; // è possibile pianificare la data di trasmissione a TXMax&nbsp;<br>    insertPlace.Places = new PlaceInsert[] { place };&nbsp;<br>&nbsp;<br>    return insertPlace;&nbsp;<br>}
+</pre>
+
+
+
+<H4 class="dtH4">Requirements</H4>
+<P><b class="le">Platforms:&nbsp;</b>Windows 98, Windows 2000 SP4, Windows Millennium Edition, Windows Server 2003, Windows XP Media Center Edition, Windows XP Professional x64 Edition, Windows XP SP2, Windows XP Starter Edition</P>
+
+
+<H4 class="dtH4">See Also</H4>
+<p>
+<a href="frlrfVolcanoTXSyncModelSpedizioneClassTopic.html">Spedizione</a>
+
+
+
+
+
+</p>
+
+
+<DIV CLASS="footer">
+<HR>
+<font color="#FF0000">Generated with unregistered version of <a href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></font>&nbsp;<br>Your own footer text will only be shown in registered version.
+<p>
+</div></div>
+</BODY>
+</HTML>
+

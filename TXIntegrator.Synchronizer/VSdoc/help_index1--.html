@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Index</title>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<style>
+		html,body {
+			margin: 0; padding: 0px;
+			height:100%; 
+			min-height:100%;
+			background-color: rgb(233,232,220);
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			color: black;
+		}
+
+		body {font-size:75%;position:relative; margin-top:-1px; border-style: solid solid solid solid;	border-color: rgb(172,168,153);	border-width: 0px 0px 1px 0px;}
+		a { text-decoration:none; color:#06c }
+		form {padding:5px; margin:0px;}
+	</style>
+</head>
+<body style="direction: ltr;">
+	<form>
+	Look for:<br /><input style="width:100%" onKeyDown="check_input(this.value,get_match)" onKeyUp="check_input(this.value,get_match)"/>
+	</form>
+
+	<script>
+		var words = new Array(
+"Anno Property {Volcano.TXSync.Model.Spedizione}","Anno Property {Volcano.TXSync.Model.Viaggio}","Codice Property","CodiceAutista Property","CodiceMezzo Property","Colli Property","Compress Method","CompressGzip Method","CompressionType Enumeration","Compressor Class","Connect Method","Copy Method","CreateObject Method {Volcano.TXSync.Model.Pianificazione}","CreateObject Method {Volcano.TXSync.Model.Spedizione}","CreateObject Method {Volcano.TXSync.Model.Viaggio}","CreateSqlParameters Method","DBInsert Method {Volcano.TXSync.Model.Evento}","DBInsert Method {Volcano.TXSync.Model.NotaSpesa}","DBSyncSpedizioni Method","DBSyncViaggi Method","DBSync_GetPianificazioni Method","DBUpdate Method","DMLType Enumeration","Dao  Constructor","Dao (System.String) Constructor","Dao Class","Data Property {Volcano.TXSync.Model.Evento}","Data Property {Volcano.TXSync.Model.NotaSpesa}","DataViaggio Property","DecodeAddress (System.String) Method","DecodeAddress (System.String, System.String) Method","Decompress Method","DecompressGzip Method","Descrizione Property","DestinazioneCap Property","DestinazioneGeoLoc Property","DestinazioneIndirizzo Property","DestinazioneLocalita Property","DestinazioneNazione Property","DestinazioneProvincia Property","DestinazioneRagSoc Property","DestinazioneViaggio Property","Disconnect Method","EncodeAddress Method","Evento Class","Evento Constructor","ExecuteNonQuery Method","ExecuteQuery Method","ExecuteStoredProcedure Method","Filiale Property {Volcano.TXSync.Model.Spedizione}","Filiale Property {Volcano.TXSync.Model.Viaggio}","GeoCoder Class","GeoCoordinate Property","GeoLocalizzaSpedizione Method","Id Property {Volcano.TXSync.Model.Evento}","Id Property {Volcano.TXSync.Model.NotaSpesa}","Id Property {Volcano.TXSync.Model.Pianificazione}","Id Property {Volcano.TXSync.Model.Spedizione}","Id Property {Volcano.TXSync.Model.Viaggio}","IdPianificazione Property","IdSpedizione Property","IdViaggio Property {Volcano.TXSync.Model.NotaSpesa}","IdViaggio Property {Volcano.TXSync.Model.Pianificazione}","IdViaggio Property {Volcano.TXSync.Model.Spedizione}","Indirizzo Property","KeySpedizione Property","KeyViaggio Property","MailUtenteCompetenza Property","Main Method","MittenteRagSoc Property","NotaSpesa Class","NotaSpesa Constructor","Note Property {Volcano.TXSync.Model.Evento}","Note Property {Volcano.TXSync.Model.Spedizione}","Note Property {Volcano.TXSync.Model.Viaggio}","Peso Property","Pianificazione Class","Pianificazione Constructor","Prezzo Property","Progressivo Property {Volcano.TXSync.Model.Spedizione}","Progressivo Property {Volcano.TXSync.Model.Viaggio}","Reparto Property {Volcano.TXSync.Model.Spedizione}","Reparto Property {Volcano.TXSync.Model.Viaggio}","SerializationType Enumeration","SerializeObject Method","SerializeObjectList Method","Serializer Class","Servizio Property {Volcano.TXSync.Model.Spedizione}","Servizio Property {Volcano.TXSync.Model.Viaggio}","Societa Property {Volcano.TXSync.Model.Spedizione}","Societa Property {Volcano.TXSync.Model.Viaggio}","Spedizione (System.Int32, System.Data.DataRow) Constructor","Spedizione (System.Int32, System.Int32) Constructor","Spedizione Class","Stato Property {Volcano.TXSync.Model.Evento}","Stato Property {Volcano.TXSync.Model.Pianificazione}","SyncData Property","SyncStato Property {Volcano.TXSync.Model.Evento}","SyncStato Property {Volcano.TXSync.Model.Pianificazione}","SyncTask Property {Volcano.TXSync.Model.Evento}","SyncTask Property {Volcano.TXSync.Model.Pianificazione}","SyncTipo Property","TXCreateObject Method {Volcano.TXSync.Model.Spedizione}","TXCreateObject Method {Volcano.TXSync.Model.Viaggio}","TXDelete Method {Volcano.TXSync.Model.Spedizione}","TXDelete Method {Volcano.TXSync.Model.Viaggio}","TXGetCostReport Method","TXGetStatus Method {Volcano.TXSync.Model.Spedizione}","TXGetStatus Method {Volcano.TXSync.Model.Viaggio}","TXInsert Method {Volcano.TXSync.Model.Spedizione}","TXInsert Method {Volcano.TXSync.Model.Viaggio}","TXLogin Method","TXSync Class","TXSync Reference","TXSyncSpedizioni Method","TXSyncViaggi Method","TXSync_GetPianificazioni Method","TXSync_LockPianificazioni Method","TXSync_UnlockPianificazioni Method","TXUpdate Method {Volcano.TXSync.Model.Spedizione}","TXUpdate Method {Volcano.TXSync.Model.Viaggio}","Tipo Property {Volcano.TXSync.Model.NotaSpesa}","Tipo Property {Volcano.TXSync.Model.Spedizione}","TipoPianificazione Enumeration","UnserializeObject Method","UnserializeObjectList Method","UtenteCompetenza Property","Valuta Property","Viaggio (System.Data.DataRow) Constructor","Viaggio (System.Int32) Constructor","Viaggio Class","Volcano.TXSync Namespace","Volcano.TXSync.Core Namespace","Volcano.TXSync.Model Namespace","Volume Property","XmlRequest Property","XmlResponse Property","_connection Variable","_connectionString Variable","log Constant","login Variable","~Dao Method"
+		);
+		
+		
+		var oldHighlight = 0;
+		var oldKey = "";
+		
+		function get_match(text) {
+		    var ltext = text.toLowerCase();
+		    for(i in words) {
+		        if(words[i].toLowerCase().indexOf(ltext) == "0") {
+		            return words[i];
+		        }
+		    }
+		    return "";
+		}
+		
+		function highlight(keyword) {
+		    if(oldHighlight) oldHighlight.className = "";
+		    var el = parent.frames['zindex'].document.getElementById("w_"+keyword);
+		    el.className="highlighted";
+		    oldHighlight = el;
+		}
+		
+		function check_input(text, matchfun) {
+		    if(text!=oldKey) {
+		        var keyword = matchfun(text);
+		        if(keyword) {       
+		            highlight(keyword);
+		            parent.frames['zindex'].document.getElementById('w_'+keyword).scrollIntoView();
+		        }
+		        oldKey = text;
+		    }
+		}
+	</script>
+</body>
+</html>
+

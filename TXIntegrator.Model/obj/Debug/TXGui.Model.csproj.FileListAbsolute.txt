@@ -1,0 +1,9 @@
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Model\bin\Debug\TXGui.Model.dll
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Model\bin\Debug\TXGui.Model.pdb
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Model\obj\Debug\TXGui.Model.dll
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Model\obj\Debug\TXGui.Model.pdb
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Model\bin\Debug\TXGui.Core.dll
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Model\bin\Debug\log4net.dll
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Model\bin\Debug\JsonFx.Json.dll
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Model\bin\Debug\TXGui.Core.pdb

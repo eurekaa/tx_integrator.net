@@ -1,0 +1,156 @@
+﻿html, body {
+    height: 100%;
+    font-family: Lucida Sans,Lucida Grande,Arial !important;        
+    background-color: #000000;
+    color: #333;
+    font-size: 11px !important;
+    margin: 0;    
+    padding: 0;
+    overflow: hidden;
+}
+  
+h1 {
+	font-size:1.5em;
+} 
+ 
+ #borderContainer { width: 100%; height: 100%; }
+ 
+ .grid, .grid .dojoxGridScrollbox{
+    font-family: Lucida Sans,Lucida Grande,Arial !important;        
+    background-color: #333333 !important;
+    border: none !important;    
+    padding: 0px !important;        
+}
+
+#gridViaggi .dojoxGridMasterHeader,
+#gridSpedizioni .dojoxGridMasterHeader{
+    border: 2px solid #5C8CDA !important;    
+    background: none;
+    background-color: #5C8CDA !important;
+    margin: 0px !important;
+}
+
+.grid thead, .grid tbody{
+    border: none !important;
+}
+
+.grid th{
+    font-family: Arial !important;        
+    background-color: #5C8CDA !important;
+    color: #ffffff;    
+    border: none !important;    
+}
+
+.grid td{cursor: pointer}
+
+#gridEventi .dojoxGridMasterHeader{
+    border: 2px solid #FF9900 !important; 
+    background: none;
+    background-color: #FF9900 !important;    
+    margin: 0px !important;
+}
+
+#gridEventi th{
+    border: none !important; 
+    background-color: #FF9900 !important; 
+}
+
+
+.grid td.NOT_EXECUTED,.grid td.DELIVERED, .grid td.CANCELED{
+    border: 1px solid #ffffff;
+    background-color: #ED9A4B;    
+}
+
+.grid td.NOT_DELIVERED{
+    border: 1px solid #ffffff;
+    background-color: #DE1D24;        
+}
+
+.grid td.BUSY{
+    border: 1px solid #ffffff;
+    background-color: #E5CE53;    
+}
+
+.grid td.FINISHED{
+    border: 1px solid #ffffff;
+    background-color: #8FDE8F;    
+}
+
+.grid td.CLOSED{
+    border: 1px solid #ffffff;
+    background-color: #98C0D5;    
+}
+
+
+
+.grid .dojoxGridRow, .grid .dojoxGridRowTable tr{
+    background: none;
+    background-color: #CCCCCC !important;    
+}
+
+.grid .dojoxGridRowOver .dojoxGridRowTable tr td, .grid .dojoxGridRowSelected .dojoxGridRowTable tr{    
+    background-color: #8F8F8F !important;    
+}
+
+.grid tr.dojoDndContainerOver th{
+    background-color: transparent !important;
+}
+
+
+
+
+ 
+#appLayout {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#header{    
+    height: 30px;  
+    background-color: transparent;
+    color: #ffffff;  
+    border:none;
+    margin: 0;    
+}
+
+#main{    
+    border: none;    
+    background-color: transparent;
+}
+
+
+
+#dettagliEvento_underlay { background-color:#000; }
+
+#dettagliEvento .dijitAccordionInnerContainerSelected, #dettagliEvento .dijitAccordionInnerContainer{    
+    border-color: #E98525;
+    background-color: #FF9900;    
+}
+
+#dettagliEvento .dijitAccordionTitle{
+    background-image: none;    
+}
+
+#dettagliEvento .dijitDialogTitleBar{
+    background-image: none;
+    background-color: #5C8CDA;    
+    color: #ffffff;    
+}
+
+#dettagliEvento .dijitDialogPaneContent{
+    padding: 0px;    
+}
+
+#dettagliEvento .dijitDialog{
+    border: 2px solid #ffffff;    
+}
+
+#dettagliEvento .dijitDialogTitleBar{
+    border: none;
+}
+
+#dettagliEvento .dijitAccordionText{
+    color: #ffffff;
+}
+

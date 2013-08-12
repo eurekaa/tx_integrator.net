@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TXIntegrator Event Viewer</title>
+
+    <link rel="Stylesheet" type="text/css" href="/Styles/TXGui.css" />
+
+    <style type="text/css">
+        @import "/Javascript/Dojo/dijit/themes/claro/claro.css";
+        @import "/Javascript/Dojo/dojox/grid/enhanced/resources/claro/EnhancedGrid.css";
+        
+        @import "/Javascript/Dojo/dojox/grid/resources/Grid.css";
+        @import "/Javascript/Dojo/dojox/grid/resources/claro/Grid.css";
+    </style>
+    <script type="text/javascript" language="javascript" src="/Javascript/Dojo/dojo/dojo.js" data-dojo-config="isDebug: true, parseOnLoad: true"></script>
+
+    <script type="text/javascript" language="javascript">
+
+        dojo.require("dijit.layout.BorderContainer");
+        dojo.require("dijit.layout.ContentPane");
+        dojo.require("dijit.layout.AccordionContainer");
+        dojo.require("dijit.Dialog");
+        dojo.require("dijit.form.TextBox");
+
+        dojo.require("dojo.data.ItemFileReadStore");
+        dojo.require("dojo.parser");
+        dojo.require("dojo.date.locale");
+
+        dojo.require("dojox.json.ref");
+        dojo.require("dojox.grid.DataGrid");
+        dojo.require("dojox.html.entities");        
+
+        dojo.registerModulePath("Jarvix", "../../Jarvix");
+        dojo.registerModulePath("TXIntegrator", "../../TXIntegrator");
+
+        dojo.require("TXIntegrator.Model.ViewViaggiPianificati");
+        dojo.require("TXIntegrator.Model.ViewSpedizioniPianificate");
+        dojo.require("TXIntegrator.Model.Eventi");
+
+        var gridEventi = null;
+
+        dojo.ready(function () {
+
+
+            if (sessionStorage.Logged) {                
+                dojo.style("pnlLogin", "display", "none");
+                dijit.byId("pnlApplication").attr("visibility", "visible");
+            }
+
+            dojo.connect(dijit.byId("btnLogin"), "onClick", function () {
+                var username = dijit.byId("txtUsername").attr("value");
+                var password = dijit.byId("txtPassword").attr("value");
+                if (username == "txintegrator" && password == "degirolami2012") {
+                    sessionStorage.Logged = true;
+                    dojo.style("pnlLogin", "display", "none");
+                    dijit.byId("pnlApplication").attr("visibility", "visible");
+                } else {
+                    sessionStorage.Logged = false;
+                    alert("login errato");
+                }
+            });
+
+
+            var gridViaggi = dijit.byId("gridViaggi");
+            var gridSpedizioni = dijit.byId("gridSpedizioni");
+            gridEventi = dijit.byId("gridEventi");
+
+            var viaggioPianificato = new TXIntegrator.Model.ViewViaggiPianificati();
+            var viaggiPianificati = viaggioPianificato.Search();
+            var storeViaggi = null;
+            eval("storeViaggi = new dojo.data.ItemFileReadStore({ data: { items: " + viaggiPianificati + " } });");
+            gridViaggi.setStore(storeViaggi);
+            gridViaggi.columnReordering = true;
+
+            gridViaggi.onRowDblClick = function (event) {
+                var viaggioPianificato = this.getItem(event.rowIndex);
+                // riempio la griglia spedizioni
+                var spedizionePianificata = new TXIntegrator.Model.ViewSpedizioniPianificate();
+                var spedizioniPianificate = spedizionePianificata.Search({ "IdViaggio": viaggioPianificato.IdViaggio });
+                var storeSpedizioni = null;
+                eval("storeSpedizioni = new dojo.data.ItemFileReadStore({ data: { items: " + spedizioniPianificate + " } });");
+                gridSpedizioni.setStore(storeSpedizioni);
+                // riempio la griglia eventi (temporizzata)
+                LoadEvents(viaggioPianificato.IdPianificazione);
+                setInterval("LoadEvents(" + viaggioPianificato.IdPianificazione + ")", 30000);
+            }
+
+            gridSpedizioni.onRowDblClick = function (event) {
+                var spedizionePianificata = this.getItem(event.rowIndex);
+                // riempio la griglia eventi (temporizzata)
+                LoadEvents(spedizionePianificata.IdPianificazione);
+            }
+
+            gridEventi.onRowDblClick = function (event) {
+                var evento = this.getItem(event.rowIndex);
+                dojo.byId("EventoXmlRequest").innerHTML = dojox.html.entities.encode(evento.XmlRequest[0]);
+                dojo.byId("EventoXmlResponse").innerHTML = dojox.html.entities.encode(evento.XmlResponse[0]);
+                dojo.byId("EventoNote").innerHTML = evento.Note[0];
+                dijit.byId("dettagliEvento").show();
+            }
+
+        });
+
+
+        function LoadEvents(IdPianificazione) {
+            var evento = new TXIntegrator.Model.Eventi();
+            var eventi = evento.Search({ "IdPianificazione": IdPianificazione });
+            var storeEventi = null;
+            eval("storeEventi = new dojo.data.ItemFileReadStore({ data: { items: " + eventi + " } });");
+            gridEventi.setStore(storeEventi);
+        }
+
+        function FormatDate(value) {
+            if (value != null) {
+                var year = value.substr(0, 4);
+                var month = value.substr(5, 2);
+                var day = value.substr(8, 2);
+                var hours = value.substr(11, 2);
+                var minutes = value.substr(14, 2);
+                var seconds = value.substr(17, 2);
+                var newValue = day + "/" + month + "/" + year + " " + hours + ":" + minutes;
+                return newValue;
+            } else {
+                return value;
+            }
+        }
+
+        function FormatRowLegend(value, rowIndex, cell) {
+            var item = cell.grid.getItem(rowIndex);
+            cell.customClasses.push(item.Stato);
+            return "";
+        }
+
+
+
+    </script>
+
+</head>
+
+<body class="claro">
+
+
+    <!-- LOGIN -->    
+    <div id="pnlLogin" style="display:block;width:100%;height:100%;">
+    <div dojotype="dijit.layout.BorderContainer" style="float: left; width: 100%; height: 100%;">
+        
+        <!-- HEADER -->
+        <div dojotype="dijit.layout.ContentPane" splitter="false" region="top" style="width: 100%; height: 30px; background-color: transparent; color: #ffffff; border: none; border-bottom: 1px solid #7F7F7F; padding: 3px 10px 6px 10px;">
+            <span style="font-size: 22pt; font-weight: bold;">TX Integrator </span><span style="font-size: 10pt; color: #7F7F7F;">{ Sync Event Viewer }</span>
+        </div>
+                                            
+        <div dojotype="dijit.layout.ContentPane" splitter="false" region="center" style="display:block;width: 100%; height: 250px; background-color: transparent; margin: 0px; padding: 0px; border: none;">
+            <input type="text" id="txtUsername" name="txtUsername" placeHolder="username" value="" dojoType="dijit.form.TextBox" trim="true" style="margin-bottom: 3px;" />
+            <br/>
+            <input type="password" id="txtPassword" name="txtPassword" placeHolder="password" value="" dojoType="dijit.form.TextBox" trim="true" style="margin-bottom: 3px;" />
+            <br/>
+            <button id="btnLogin" dojoType="dijit.form.Button" type="button">LOGIN</button>      
+        </div>
+
+        <!-- FOOTER -->
+        <div dojotype="dijit.layout.ContentPane" splitter="false" region="bottom" style="width: 100%; height: 12px; padding: 3px 10px 0px 10px; background-color: transparent; text-align:right; color: #ffffff; border: none; border-top: 1px solid #7F7F7F; margin: 0;">
+            powered by Volcano
+        </div>
+        
+    </div>
+    </div>
+    
+
+
+    <!-- APPLICAZIONE -->    
+    <div id="pnlApplication" visibility="hidden" dojotype="dijit.layout.BorderContainer" style="float: left; width: 100%; height: 100%;">
+        
+        <!-- HEADER -->
+        <div dojotype="dijit.layout.ContentPane" splitter="false" region="top" style="float:left; width: 100%; height: 30px; background-color: transparent; color: #ffffff; border: none; border-bottom: 1px solid #7F7F7F; padding: 3px 10px 6px 10px;">
+            <span style="font-size: 22pt; font-weight: bold;">TX Integrator </span><span style="font-size: 10pt; color: #7F7F7F;">{ Sync Event Viewer }</span>
+        </div>                                     
+                
+        <!-- APPLICATION -->                
+        <div dojotype="dijit.layout.BorderContainer" region="center" style="float:left;width:100%;height:250px;background-color:transparent;" gutters="true" livesplitters="true">                   
+            <div dojotype="dijit.layout.ContentPane" splitter="true" region="top" style="width: 100%; height: 250px; margin: 0px; padding: 0px; border: none;">
+                <table id="gridViaggi" cellpadding="0" cellspacing="0" border="none" class="grid" dojotype="dojox.grid.DataGrid">
+                <thead>
+                    <tr>
+                        <th field="" formatter="FormatRowLegend" width="10px"></th><th field="IdPianificazione" width="20px" hidden="true">IdPianificazione</th><th field="IdViaggio" width="20px" hidden="true">IdViaggio</th><th field="Stato" width="auto">Stato</th><th field="KeyViaggio" width="auto">Key</th><th field="DataViaggio" width="auto">Data Viaggio</th><th field="CodiceMezzo" width="40px">Mezzo</th><th field="CodiceAutista" width="40px">Autista</th><th field="DestinazioneViaggio" width="auto">Destinazione</th><th field="DataInizio" width="120px" formatter="FormatDate">Data Inizio</th><th field="DataFine" width="120px" formatter="FormatDate">Data Fine</th><th field="KmInizio" width="50px">Km Inizio</th><th field="KmFine" width="50px">Km Fine</th><th field="KmViaggio" width="50px">Km Tot</th><th field="ConsumoLt" width="auto">Litri</th><th field="VelocitaMedia" width="auto">Velocità Media</th><th field="OreGuida" width="auto">Ore Guida</th>
+                    </tr>
+                </thead>
+            </table>
+            </div>            
+            <div dojotype="dijit.layout.BorderContainer" region="center" style="float: left; width: 100%; height: auto;" gutters="true" livesplitters="true">
+                <div dojotype="dijit.layout.ContentPane" splitter="true" region="left" style="width: 49%; height: 49%; margin: 0px; padding: 0px; border: none;">
+                                                                    <table id="gridSpedizioni" border="none" class="grid" dojotype="dojox.grid.DataGrid">
+                <thead>
+                    <tr>
+                        <th field="" formatter="FormatRowLegend" width="10px"></th><th field="IdPianificazione" width="20px" hidden="true">IdPianificazione</th><th field="IdViaggio" width="20px" hidden="true">IdViaggio</th><th field="IdSpedizione" width="20px" hidden="true">IdSpedizione</th><th field="Stato" width="auto">Stato</th><th field="KeySpedizione" width="auto">Key</th><th field="Tipo" width="auto">Tipo</th><th field="MittenteRagSoc" width="auto">Mittente</th><th fielddesign="sidebar" ="DestinazioneRagSoc" width="auto">Destinatario</th><th field="DestinazioneLocalita" width="auto">Destinazione</th>
+                    </tr>
+                </thead>
+            </table>
+                </div>
+                <div dojotype="dijit.layout.ContentPane" splitter="true" region="center" style="width: 49%; height: 49%; margin: 0px; padding: 0px; border: none;">
+                                                                    <table id="gridEventi" border="none" class="grid" dojotype="dojox.grid.DataGrid">
+                <thead>
+                    <tr>
+                        <th field="" formatter="FormatRowLegend" width="10px"></th><th field="Id" width="20px" hidden="true">IdEvento</th><th field="IdPianificazione" width="20px" hidden="true">IdPianificazione</th><th field="Data" width="110px" formatter="FormatDate">Data Evento</th><th field="Stato" width="90px">Stato Evento</th><th field="SyncData" width="110px" formatter="FormatDate">Data Sync</th><th field="SyncStato" width="auto">Stato Sync</th><th field="SyncTipo" width="a design="sidebar"uto">Tipo</th><th field="SyncTask" width="100px">Task</th>
+                    </tr>
+                </thead>
+            </table>
+                </div>
+            </div>
+        </div>
+            
+        
+        <!-- FOOTER -->
+        <div dojotype="dijit.layout.ContentPane" splitter="false" region="bottom" style="float:left;width: 100%; height: 12px; padding: 3px 10px 0px 10px; background-color: transparent; text-align:right; color: #ffffff; border: none; border-top: 1px solid #7F7F7F; margin: 0;">
+            powered by Volcano
+        </div>
+
+    </div>
+    
+
+
+    <!-- DETTAGLI EVENTO (DIALOG) -->
+    <div id="dettagliEvento" dojotype="dijit.Dialog" title="Dettagli Evento">
+        <div dojotype="dijit.layout.AccordionContainer" style="width: 400px; height: 400px;">
+            <div id="EventoXmlRequest" dojotype="dijit.layout.ContentPane" title="TXMax Request">
+            </div>
+            <div id="EventoXmlResponse" dojotype="dijit.layout.ContentPane" title="TXMax Response">
+            </div>
+            <div id="EventoNote" dojotype="dijit.layout.ContentPane" title="Note">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

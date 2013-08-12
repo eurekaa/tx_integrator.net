@@ -1,0 +1,12 @@
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXSync\TXSync\bin\Debug\TXSync.exe.config
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXSync\TXSync\bin\Debug\TXSync.exe.manifest
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXSync\TXSync\bin\Debug\TXSync.application
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXSync\TXSync\bin\Debug\TXSync.exe
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXSync\TXSync\bin\Debug\TXSync.pdb
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXSync\TXSync\bin\Debug\JsonFx.Json.dll
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXSync\TXSync\bin\Debug\log4net.dll
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXSync\TXSync\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXSync\TXSync\obj\x86\Debug\TXSync.exe.manifest
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXSync\TXSync\obj\x86\Debug\TXSync.application
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXSync\TXSync\obj\x86\Debug\TXSync.exe
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXSync\TXSync\obj\x86\Debug\TXSync.pdb

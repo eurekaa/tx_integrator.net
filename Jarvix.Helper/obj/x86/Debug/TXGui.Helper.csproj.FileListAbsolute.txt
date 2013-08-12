@@ -1,0 +1,10 @@
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Helper\bin\Debug\TXGui.Helper.exe.config
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Helper\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Helper\bin\Debug\TXGui.Helper.exe
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Helper\bin\Debug\TXGui.Helper.pdb
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Helper\bin\Debug\log4net.dll
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Helper\bin\Debug\TXGui.Core.dll
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Helper\bin\Debug\JsonFx.Json.dll
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Helper\bin\Debug\TXGui.Core.pdb
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Helper\obj\x86\Debug\TXGui.Helper.exe
+E:\ultrapulito\projects\volcano\projects\TXIntegrator\TXGui\TXGui.Helper\obj\x86\Debug\TXGui.Helper.pdb

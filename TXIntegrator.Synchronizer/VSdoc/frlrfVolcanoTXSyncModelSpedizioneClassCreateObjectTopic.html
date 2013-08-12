@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML xmlns:MSHelp="http://msdn.microsoft.com/mshelp" DIR="LTR"><HEAD>
+<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com">
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=UTF-8">
+<TITLE>Spedizione.CreateObject Method</TITLE>
+<xml>
+<MSHelp:TOCTitle Title="Spedizione.CreateObject Method"/>
+<MSHelp:RLTitle Title="Spedizione.CreateObject Method"/>
+<MSHelp:Keyword Index="A" Term="frlrfVolcanoTXSyncModelSpedizioneClassCreateObjectTopic"/>
+<MSHelp:Keyword Index="K" Term="Spedizione.CreateObject Method"/>
+<MSHelp:Keyword Index="K" Term="Volcano.TXSync.Model.Spedizione.CreateObject Method"/>
+<MSHelp:Keyword Index="F" Term="Volcano.TXSync.Model.Spedizione.CreateObject"/>
+<MSHelp:Keyword Index="F" Term="Spedizione.CreateObject"/>
+<MSHelp:Keyword Index="F" Term="Volcano.TXSync.Model.Spedizione.Spedizione.CreateObject"/>
+<MSHelp:Attr Name="DevLang" Value="VB"/>
+<MSHelp:Attr Name="DevLangVers" Value="kbLangVB"/>
+<MSHelp:Attr Name="DocSet" Value="Visual Basic"/>
+<MSHelp:Attr Name="DocSet" Value="Visual Studio"/>
+<MSHelp:Attr Name="DocSet" Value="VSM"/>
+<MSHelp:Attr Name="Product" Value="VB"/>
+<MSHelp:Attr Name="ProductVers" Value="kbVBp700"/>
+<MSHelp:Attr Name="Product" Value="VSA"/>
+<MSHelp:Attr Name="ProductVers" Value="kbVSA"/>
+<MSHelp:Attr Name="Technology" Value="ManagedCode"/>
+<MSHelp:Attr Name="TechnologyVers" Value="kbManagedCode"/>
+<MSHelp:Attr Name="TopicType" Value="kbSyntax"/>
+<MSHelp:Attr Name="TargetOS" Value="Windows"/>
+<MSHelp:Attr Name="Locale" Value="kbEnglish"/>
+</xml>
+<META name="rtfFileName" content="">
+<META NAME="save" CONTENT="history">
+<!--CSS_START-->
+<SCRIPT SRC="MSHelp/scripts/dtuelink.js"></SCRIPT>
+<!--CSS_END-->
+<SCRIPT language="JavaScript">
+function indent(level) {
+	for (i=1; i<=level; i++) {
+		document.write("&nbsp;&nbsp;&nbsp;");
+	}
+}
+</SCRIPT>
+</HEAD>
+<body style="direction: ltr;" topmargin=0 id="bodyID" class = "dtBODY"><!--NONSCROLLING BANNER START-->
+<div id="nsbanner">
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>TXSync</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1"><A NAME="frlrfVolcanoTXSyncModelSpedizioneClassCreateObjectTopic"></A>Spedizione.CreateObject Method</H1>
+</div></div>
+<!--NONSCROLLING BANNER END-->
+
+<DIV id="nstext" valign="bottom"><!---->
+
+<P>Riempie l'oggetto a partire da un DataRow.
+Se la spedizione non è geo-localizzata vengono ricavate le coordinate e salvate sul db.</P>
+
+
+
+
+
+<PRE class="syntax"><SPAN class="lang">[C#]
+</SPAN><B>private <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemVoidClassTopic.asp">void</a> CreateObject(&nbsp;<br>   <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemInt32ClassTopic.asp">int</a> <i>id_viaggio</i>,&nbsp;<br>   <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemDataDataRowClassTopic.asp">DataRow</a> <i>spedizione</i>&nbsp;<br>)</B></PRE>
+
+
+
+
+
+<H4 class="dtH4">Parameters</H4>
+<dl>
+<dt><i>id_viaggio</i></dt>
+<dd>Id del viaggio a cui è associata la spedizione</dd>
+<dt><i>spedizione</i></dt>
+<dd>I dati delle spedizione con cui riempire l'oggetto</dd>
+
+</dl>
+
+
+
+
+<H4 class="dtH4">Returns</H4>
+<P>void</P>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H4 class="dtH4">Source code</H4>
+
+<pre class="code"><SPAN class="lang">[C#]</SPAN>
+private void CreateObject(int id_viaggio, DataRow spedizione) {&nbsp;<br>    this.Id = (int)spedizione[&quot;Id&quot;];&nbsp;<br>    this.IdViaggio = id_viaggio;&nbsp;<br>    this.KeySpedizione = (spedizione[&quot;KeySpedizione&quot;] != DBNull.Value) ? (string)spedizione[&quot;KeySpedizione&quot;] : &quot;&quot;;&nbsp;<br>    this.Tipo = (spedizione[&quot;Tipo&quot;] != DBNull.Value) ? (string)spedizione[&quot;Tipo&quot;] : &quot;&quot;;&nbsp;<br>    this.Societa = (spedizione[&quot;Societa&quot;] != DBNull.Value) ? (string)spedizione[&quot;Societa&quot;] : &quot;&quot;;&nbsp;<br>    this.Filiale = (spedizione[&quot;Filiale&quot;] != DBNull.Value) ? (string)spedizione[&quot;Filiale&quot;] : &quot;&quot;;&nbsp;<br>    this.Anno = (spedizione[&quot;Anno&quot;] != DBNull.Value) ? Convert.ToInt32(spedizione[&quot;Anno&quot;]) : 0;&nbsp;<br>    this.Progressivo = (spedizione[&quot;Progressivo&quot;] != DBNull.Value) ? Convert.ToInt32(spedizione[&quot;Progressivo&quot;]) : 0;&nbsp;<br>    this.Servizio = (spedizione[&quot;Servizio&quot;] != DBNull.Value) ? (string)spedizione[&quot;Servizio&quot;] : &quot;&quot;;&nbsp;<br>    this.Reparto = (spedizione[&quot;Servizio&quot;] != DBNull.Value) ? (string)spedizione[&quot;Servizio&quot;] : &quot;&quot;;&nbsp;<br>    this.MittenteRagSoc = (spedizione[&quot;MittenteRagSoc&quot;] != DBNull.Value) ? (string)spedizione[&quot;MittenteRagSoc&quot;] : &quot;&quot;;&nbsp;<br>    this.DestinazioneRagSoc = (spedizione[&quot;DestinazioneRagSoc&quot;] != DBNull.Value) ? (string)spedizione[&quot;DestinazioneRagSoc&quot;] : &quot;&quot;;&nbsp;<br>    this.DestinazioneIndirizzo = (spedizione[&quot;DestinazioneIndirizzo&quot;] != DBNull.Value) ? (string)spedizione[&quot;DestinazioneIndirizzo&quot;] : &quot;&quot;;&nbsp;<br>    this.DestinazioneCap = (spedizione[&quot;DestinazioneCap&quot;] != DBNull.Value) ? (string)spedizione[&quot;DestinazioneCap&quot;] : &quot;&quot;;&nbsp;<br>    this.DestinazioneLocalita = (spedizione[&quot;DestinazioneLocalita&quot;] != DBNull.Value) ? (string)spedizione[&quot;DestinazioneLocalita&quot;] : &quot;&quot;;&nbsp;<br>    this.DestinazioneProvincia = (spedizione[&quot;DestinazioneProvincia&quot;] != DBNull.Value) ? (string)spedizione[&quot;DestinazioneProvincia&quot;] : &quot;&quot;;&nbsp;<br>    this.DestinazioneNazione = (spedizione[&quot;DestinazioneNazione&quot;] != DBNull.Value) ? (string)spedizione[&quot;DestinazioneNazione&quot;] : &quot;&quot;;&nbsp;<br>    this.DestinazioneGeoLoc = (spedizione[&quot;DestinazioneGeoLoc&quot;] != DBNull.Value) ? (string)spedizione[&quot;DestinazioneGeoLoc&quot;] : &quot;&quot;;&nbsp;<br>    this.Colli = (spedizione[&quot;Colli&quot;] != DBNull.Value) ? Convert.ToInt32(spedizione[&quot;Colli&quot;]) : 0;&nbsp;<br>    this.Peso = (spedizione[&quot;Peso&quot;] != DBNull.Value) ? Convert.ToDouble(spedizione[&quot;Peso&quot;]) : 0;&nbsp;<br>    this.Volume = (spedizione[&quot;Volume&quot;] != DBNull.Value) ? Convert.ToDouble(spedizione[&quot;Volume&quot;]) : 0;&nbsp;<br>    this.Note = (spedizione[&quot;Note&quot;] != DBNull.Value) ? (string)spedizione[&quot;Note&quot;] : &quot;&quot;;&nbsp;<br>&nbsp;<br>    // se la spedizione non è geo-localizzata la geolocalizzo&nbsp;<br>    if (this.DestinazioneGeoLoc == &quot;&quot;) {&nbsp;<br>        this.GeoLocalizzaSpedizione();&nbsp;<br>    }&nbsp;<br>}
+</pre>
+
+
+
+<H4 class="dtH4">Requirements</H4>
+<P><b class="le">Platforms:&nbsp;</b>Windows 98, Windows 2000 SP4, Windows Millennium Edition, Windows Server 2003, Windows XP Media Center Edition, Windows XP Professional x64 Edition, Windows XP SP2, Windows XP Starter Edition</P>
+
+
+<H4 class="dtH4">See Also</H4>
+<p>
+<a href="frlrfVolcanoTXSyncModelSpedizioneClassTopic.html">Spedizione</a>
+
+
+
+
+
+</p>
+
+
+<DIV CLASS="footer">
+<HR>
+<font color="#FF0000">Generated with unregistered version of <a href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></font>&nbsp;<br>Your own footer text will only be shown in registered version.
+<p>
+</div></div>
+</BODY>
+</HTML>
+

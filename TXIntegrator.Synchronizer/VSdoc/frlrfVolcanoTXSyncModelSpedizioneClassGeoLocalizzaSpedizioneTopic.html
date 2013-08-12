@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML xmlns:MSHelp="http://msdn.microsoft.com/mshelp" DIR="LTR"><HEAD>
+<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com">
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=UTF-8">
+<TITLE>Spedizione.GeoLocalizzaSpedizione Method</TITLE>
+<xml>
+<MSHelp:TOCTitle Title="Spedizione.GeoLocalizzaSpedizione Method"/>
+<MSHelp:RLTitle Title="Spedizione.GeoLocalizzaSpedizione Method"/>
+<MSHelp:Keyword Index="A" Term="frlrfVolcanoTXSyncModelSpedizioneClassGeoLocalizzaSpedizioneTopic"/>
+<MSHelp:Keyword Index="K" Term="Spedizione.GeoLocalizzaSpedizione Method"/>
+<MSHelp:Keyword Index="K" Term="Volcano.TXSync.Model.Spedizione.GeoLocalizzaSpedizione Method"/>
+<MSHelp:Keyword Index="F" Term="Volcano.TXSync.Model.Spedizione.GeoLocalizzaSpedizione"/>
+<MSHelp:Keyword Index="F" Term="Spedizione.GeoLocalizzaSpedizione"/>
+<MSHelp:Keyword Index="F" Term="Volcano.TXSync.Model.Spedizione.Spedizione.GeoLocalizzaSpedizione"/>
+<MSHelp:Attr Name="DevLang" Value="VB"/>
+<MSHelp:Attr Name="DevLangVers" Value="kbLangVB"/>
+<MSHelp:Attr Name="DocSet" Value="Visual Basic"/>
+<MSHelp:Attr Name="DocSet" Value="Visual Studio"/>
+<MSHelp:Attr Name="DocSet" Value="VSM"/>
+<MSHelp:Attr Name="Product" Value="VB"/>
+<MSHelp:Attr Name="ProductVers" Value="kbVBp700"/>
+<MSHelp:Attr Name="Product" Value="VSA"/>
+<MSHelp:Attr Name="ProductVers" Value="kbVSA"/>
+<MSHelp:Attr Name="Technology" Value="ManagedCode"/>
+<MSHelp:Attr Name="TechnologyVers" Value="kbManagedCode"/>
+<MSHelp:Attr Name="TopicType" Value="kbSyntax"/>
+<MSHelp:Attr Name="TargetOS" Value="Windows"/>
+<MSHelp:Attr Name="Locale" Value="kbEnglish"/>
+</xml>
+<META name="rtfFileName" content="">
+<META NAME="save" CONTENT="history">
+<!--CSS_START-->
+<SCRIPT SRC="MSHelp/scripts/dtuelink.js"></SCRIPT>
+<!--CSS_END-->
+<SCRIPT language="JavaScript">
+function indent(level) {
+	for (i=1; i<=level; i++) {
+		document.write("&nbsp;&nbsp;&nbsp;");
+	}
+}
+</SCRIPT>
+</HEAD>
+<body style="direction: ltr;" topmargin=0 id="bodyID" class = "dtBODY"><!--NONSCROLLING BANNER START-->
+<div id="nsbanner">
+<div id="bannerrow1">
+<TABLE CLASS="bannerparthead" CELLSPACING=0>
+<TR ID="hdr">
+<TD CLASS="runninghead" nowrap>TXSync</TD>
+<TD CLASS="product" nowrap>&nbsp;</TD>
+</TR>
+</TABLE>
+</div>
+<div id="TitleRow">
+<H1 class="dtH1"><A NAME="frlrfVolcanoTXSyncModelSpedizioneClassGeoLocalizzaSpedizioneTopic"></A>Spedizione.GeoLocalizzaSpedizione Method</H1>
+</div></div>
+<!--NONSCROLLING BANNER END-->
+
+<DIV id="nstext" valign="bottom"><!---->
+
+<P>Geolocalizza la spedizione e salva le coordinte sul database.</P>
+
+
+
+
+
+<PRE class="syntax"><SPAN class="lang">[C#]
+</SPAN><B>public <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemVoidClassTopic.asp">void</a> GeoLocalizzaSpedizione()</B></PRE>
+
+
+
+
+
+
+
+
+
+<H4 class="dtH4">Returns</H4>
+<P>void</P>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H4 class="dtH4">Source code</H4>
+
+<pre class="code"><SPAN class="lang">[C#]</SPAN>
+public void GeoLocalizzaSpedizione() {            &nbsp;<br>    string indirizzo = this.DestinazioneIndirizzo + &quot;, &quot; + this.DestinazioneCap + &quot; &quot; + this.DestinazioneLocalita + &quot;, &quot; + this.DestinazioneProvincia + &quot; &quot; + this.DestinazioneNazione;&nbsp;<br>    string coordinate = GeoCoder.EncodeAddress(indirizzo);&nbsp;<br>    if (coordinate == null || coordinate == &quot;&quot;) {&nbsp;<br>        throw new Exception(&quot;Impossibile geolocalizzare la spedizione - id: &quot; + this.Id + &quot; - Verificare i campi che compongono l'indirizzo.&quot; );&nbsp;<br>    }&nbsp;<br>    this.DestinazioneGeoLoc = coordinate;&nbsp;<br>    Dao dao = new Dao();&nbsp;<br>    string sql = &quot;UPDATE Spedizioni SET DestinazioneGeoLoc = '&quot; + this.DestinazioneGeoLoc + &quot;' WHERE Id=&quot; + this.Id;&nbsp;<br>    dao.ExecuteNonQuery(sql);&nbsp;<br>}
+</pre>
+
+
+
+<H4 class="dtH4">Requirements</H4>
+<P><b class="le">Platforms:&nbsp;</b>Windows 98, Windows 2000 SP4, Windows Millennium Edition, Windows Server 2003, Windows XP Media Center Edition, Windows XP Professional x64 Edition, Windows XP SP2, Windows XP Starter Edition</P>
+
+
+<H4 class="dtH4">See Also</H4>
+<p>
+<a href="frlrfVolcanoTXSyncModelSpedizioneClassTopic.html">Spedizione</a>
+
+
+
+
+
+</p>
+
+
+<DIV CLASS="footer">
+<HR>
+<font color="#FF0000">Generated with unregistered version of <a href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></font>&nbsp;<br>Your own footer text will only be shown in registered version.
+<p>
+</div></div>
+</BODY>
+</HTML>
+

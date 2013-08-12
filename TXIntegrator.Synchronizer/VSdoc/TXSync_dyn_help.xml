@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DynamicHelp xmlns="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd">
+   <LINKGROUP ID="TXSync" Title="TXSync Help" Priority="2100">
+      <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+   </LINKGROUP>
+
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Anno" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassAnnoTopic.html" LinkGroup="TXSync">Anno Property {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.Anno" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassAnnoTopic.html" LinkGroup="TXSync">Anno Property {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa.Codice" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassCodiceTopic.html" LinkGroup="TXSync">Codice Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.CodiceAutista" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassCodiceAutistaTopic.html" LinkGroup="TXSync">CodiceAutista Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.CodiceMezzo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassCodiceMezzoTopic.html" LinkGroup="TXSync">CodiceMezzo Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Colli" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassColliTopic.html" LinkGroup="TXSync">Colli Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Compressor.Compress" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreCompressorClassCompressTopic.html" LinkGroup="TXSync">Compress Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Compressor.CompressGzip" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreCompressorClassCompressGzipTopic.html" LinkGroup="TXSync">CompressGzip Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.CompressionType" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreCompressionTypeClassTopic.html" LinkGroup="TXSync">CompressionType Enumeration</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Compressor" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreCompressorClassTopic.html" LinkGroup="TXSync">Compressor Class</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Dao.Connect" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDaoClassConnectTopic.html" LinkGroup="TXSync">Connect Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Serializer.Copy" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreSerializerClassCopyTopic.html" LinkGroup="TXSync">Copy Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.CreateObject" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassCreateObjectTopic.html" LinkGroup="TXSync">CreateObject Method {Volcano.TXSync.Model.Pianificazione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.CreateObject" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassCreateObjectTopic.html" LinkGroup="TXSync">CreateObject Method {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.CreateObject" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassCreateObjectTopic.html" LinkGroup="TXSync">CreateObject Method {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Dao.CreateSqlParameters" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDaoClassCreateSqlParametersTopic.html" LinkGroup="TXSync">CreateSqlParameters Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.DBInsert" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassDBInsertTopic.html" LinkGroup="TXSync">DBInsert Method {Volcano.TXSync.Model.Evento}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa.DBInsert" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassDBInsertTopic.html" LinkGroup="TXSync">DBInsert Method {Volcano.TXSync.Model.NotaSpesa}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.TXSync.DBSyncSpedizioni" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncTXSyncClassDBSyncSpedizioniTopic.html" LinkGroup="TXSync">DBSyncSpedizioni Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.TXSync.DBSyncViaggi" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncTXSyncClassDBSyncViaggiTopic.html" LinkGroup="TXSync">DBSyncViaggi Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.DBSync_GetPianificazioni" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassDBSync_GetPianificazioniTopic.html" LinkGroup="TXSync">DBSync_GetPianificazioni Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.DBUpdate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassDBUpdateTopic.html" LinkGroup="TXSync">DBUpdate Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.DMLType" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDMLTypeClassTopic.html" LinkGroup="TXSync">DMLType Enumeration</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Dao.Dao" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDaoClassctorTopic.html" LinkGroup="TXSync">Dao  Constructor</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Dao.Dao" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDaoClassctorTopic2.html" LinkGroup="TXSync">Dao (System.String) Constructor</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Dao" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDaoClassTopic.html" LinkGroup="TXSync">Dao Class</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.Data" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassDataTopic.html" LinkGroup="TXSync">Data Property {Volcano.TXSync.Model.Evento}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa.Data" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassDataTopic.html" LinkGroup="TXSync">Data Property {Volcano.TXSync.Model.NotaSpesa}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.DataViaggio" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassDataViaggioTopic.html" LinkGroup="TXSync">DataViaggio Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.GeoCoder.DecodeAddress" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreGeoCoderClassDecodeAddressTopic2.html" LinkGroup="TXSync">DecodeAddress (System.String) Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.GeoCoder.DecodeAddress" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreGeoCoderClassDecodeAddressTopic.html" LinkGroup="TXSync">DecodeAddress (System.String, System.String) Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Compressor.Decompress" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreCompressorClassDecompressTopic.html" LinkGroup="TXSync">Decompress Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Compressor.DecompressGzip" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreCompressorClassDecompressGzipTopic.html" LinkGroup="TXSync">DecompressGzip Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa.Descrizione" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassDescrizioneTopic.html" LinkGroup="TXSync">Descrizione Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.DestinazioneCap" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassDestinazioneCapTopic.html" LinkGroup="TXSync">DestinazioneCap Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.DestinazioneGeoLoc" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassDestinazioneGeoLocTopic.html" LinkGroup="TXSync">DestinazioneGeoLoc Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.DestinazioneIndirizzo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassDestinazioneIndirizzoTopic.html" LinkGroup="TXSync">DestinazioneIndirizzo Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.DestinazioneLocalita" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassDestinazioneLocalitaTopic.html" LinkGroup="TXSync">DestinazioneLocalita Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.DestinazioneNazione" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassDestinazioneNazioneTopic.html" LinkGroup="TXSync">DestinazioneNazione Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.DestinazioneProvincia" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassDestinazioneProvinciaTopic.html" LinkGroup="TXSync">DestinazioneProvincia Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.DestinazioneRagSoc" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassDestinazioneRagSocTopic.html" LinkGroup="TXSync">DestinazioneRagSoc Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.DestinazioneViaggio" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassDestinazioneViaggioTopic.html" LinkGroup="TXSync">DestinazioneViaggio Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Dao.Disconnect" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDaoClassDisconnectTopic.html" LinkGroup="TXSync">Disconnect Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.GeoCoder.EncodeAddress" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreGeoCoderClassEncodeAddressTopic.html" LinkGroup="TXSync">EncodeAddress Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassTopic.html" LinkGroup="TXSync">Evento Class</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.Evento" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassctorTopic.html" LinkGroup="TXSync">Evento Constructor</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Dao.ExecuteNonQuery" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDaoClassExecuteNonQueryTopic.html" LinkGroup="TXSync">ExecuteNonQuery Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Dao.ExecuteQuery" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDaoClassExecuteQueryTopic.html" LinkGroup="TXSync">ExecuteQuery Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Dao.ExecuteStoredProcedure" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDaoClassExecuteStoredProcedureTopic.html" LinkGroup="TXSync">ExecuteStoredProcedure Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Filiale" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassFilialeTopic.html" LinkGroup="TXSync">Filiale Property {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.Filiale" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassFilialeTopic.html" LinkGroup="TXSync">Filiale Property {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.GeoCoder" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreGeoCoderClassTopic.html" LinkGroup="TXSync">GeoCoder Class</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa.GeoCoordinate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassGeoCoordinateTopic.html" LinkGroup="TXSync">GeoCoordinate Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.GeoLocalizzaSpedizione" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassGeoLocalizzaSpedizioneTopic.html" LinkGroup="TXSync">GeoLocalizzaSpedizione Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.Id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassIdTopic.html" LinkGroup="TXSync">Id Property {Volcano.TXSync.Model.Evento}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa.Id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassIdTopic.html" LinkGroup="TXSync">Id Property {Volcano.TXSync.Model.NotaSpesa}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.Id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassIdTopic.html" LinkGroup="TXSync">Id Property {Volcano.TXSync.Model.Pianificazione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassIdTopic.html" LinkGroup="TXSync">Id Property {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.Id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassIdTopic.html" LinkGroup="TXSync">Id Property {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.IdPianificazione" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassIdPianificazioneTopic.html" LinkGroup="TXSync">IdPianificazione Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.IdSpedizione" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassIdSpedizioneTopic.html" LinkGroup="TXSync">IdSpedizione Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa.IdViaggio" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassIdViaggioTopic.html" LinkGroup="TXSync">IdViaggio Property {Volcano.TXSync.Model.NotaSpesa}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.IdViaggio" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassIdViaggioTopic.html" LinkGroup="TXSync">IdViaggio Property {Volcano.TXSync.Model.Pianificazione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.IdViaggio" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassIdViaggioTopic.html" LinkGroup="TXSync">IdViaggio Property {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa.Indirizzo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassIndirizzoTopic.html" LinkGroup="TXSync">Indirizzo Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.KeySpedizione" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassKeySpedizioneTopic.html" LinkGroup="TXSync">KeySpedizione Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.KeyViaggio" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassKeyViaggioTopic.html" LinkGroup="TXSync">KeyViaggio Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.MailUtenteCompetenza" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassMailUtenteCompetenzaTopic.html" LinkGroup="TXSync">MailUtenteCompetenza Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.TXSync.Main" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncTXSyncClassMainTopic.html" LinkGroup="TXSync">Main Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.MittenteRagSoc" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassMittenteRagSocTopic.html" LinkGroup="TXSync">MittenteRagSoc Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassTopic.html" LinkGroup="TXSync">NotaSpesa Class</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa.NotaSpesa" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassctorTopic.html" LinkGroup="TXSync">NotaSpesa Constructor</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.Note" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassNoteTopic.html" LinkGroup="TXSync">Note Property {Volcano.TXSync.Model.Evento}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Note" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassNoteTopic.html" LinkGroup="TXSync">Note Property {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.Note" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassNoteTopic.html" LinkGroup="TXSync">Note Property {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Peso" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassPesoTopic.html" LinkGroup="TXSync">Peso Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassTopic.html" LinkGroup="TXSync">Pianificazione Class</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.Pianificazione" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassctorTopic.html" LinkGroup="TXSync">Pianificazione Constructor</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa.Prezzo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassPrezzoTopic.html" LinkGroup="TXSync">Prezzo Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Progressivo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassProgressivoTopic.html" LinkGroup="TXSync">Progressivo Property {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.Progressivo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassProgressivoTopic.html" LinkGroup="TXSync">Progressivo Property {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Reparto" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassRepartoTopic.html" LinkGroup="TXSync">Reparto Property {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.Reparto" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassRepartoTopic.html" LinkGroup="TXSync">Reparto Property {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.SerializationType" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreSerializationTypeClassTopic.html" LinkGroup="TXSync">SerializationType Enumeration</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Serializer.SerializeObject" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreSerializerClassSerializeObjectTopic.html" LinkGroup="TXSync">SerializeObject Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Serializer.SerializeObjectList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreSerializerClassSerializeObjectListTopic.html" LinkGroup="TXSync">SerializeObjectList Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Serializer" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreSerializerClassTopic.html" LinkGroup="TXSync">Serializer Class</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Servizio" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassServizioTopic.html" LinkGroup="TXSync">Servizio Property {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.Servizio" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassServizioTopic.html" LinkGroup="TXSync">Servizio Property {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Societa" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassSocietaTopic.html" LinkGroup="TXSync">Societa Property {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.Societa" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassSocietaTopic.html" LinkGroup="TXSync">Societa Property {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Spedizione" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassctorTopic.html" LinkGroup="TXSync">Spedizione (System.Int32, System.Data.DataRow) Constructor</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Spedizione" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassctorTopic2.html" LinkGroup="TXSync">Spedizione (System.Int32, System.Int32) Constructor</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassTopic.html" LinkGroup="TXSync">Spedizione Class</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.Stato" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassStatoTopic.html" LinkGroup="TXSync">Stato Property {Volcano.TXSync.Model.Evento}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.Stato" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassStatoTopic.html" LinkGroup="TXSync">Stato Property {Volcano.TXSync.Model.Pianificazione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.SyncData" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassSyncDataTopic.html" LinkGroup="TXSync">SyncData Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.SyncStato" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassSyncStatoTopic.html" LinkGroup="TXSync">SyncStato Property {Volcano.TXSync.Model.Evento}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.SyncStato" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassSyncStatoTopic.html" LinkGroup="TXSync">SyncStato Property {Volcano.TXSync.Model.Pianificazione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.SyncTask" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassSyncTaskTopic.html" LinkGroup="TXSync">SyncTask Property {Volcano.TXSync.Model.Evento}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.SyncTask" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassSyncTaskTopic.html" LinkGroup="TXSync">SyncTask Property {Volcano.TXSync.Model.Pianificazione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.SyncTipo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassSyncTipoTopic.html" LinkGroup="TXSync">SyncTipo Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.TXCreateObject" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassTXCreateObjectTopic.html" LinkGroup="TXSync">TXCreateObject Method {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.TXCreateObject" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassTXCreateObjectTopic.html" LinkGroup="TXSync">TXCreateObject Method {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.TXDelete" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassTXDeleteTopic.html" LinkGroup="TXSync">TXDelete Method {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.TXDelete" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassTXDeleteTopic.html" LinkGroup="TXSync">TXDelete Method {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.TXGetCostReport" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassTXGetCostReportTopic.html" LinkGroup="TXSync">TXGetCostReport Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.TXGetStatus" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassTXGetStatusTopic.html" LinkGroup="TXSync">TXGetStatus Method {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.TXGetStatus" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassTXGetStatusTopic.html" LinkGroup="TXSync">TXGetStatus Method {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.TXInsert" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassTXInsertTopic.html" LinkGroup="TXSync">TXInsert Method {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.TXInsert" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassTXInsertTopic.html" LinkGroup="TXSync">TXInsert Method {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.TXSync.TXLogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncTXSyncClassTXLoginTopic.html" LinkGroup="TXSync">TXLogin Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.TXSync" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncTXSyncClassTopic.html" LinkGroup="TXSync">TXSync Class</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="TXSync Reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrftxsync_referenceCustomTopic.html" LinkGroup="TXSync">TXSync Reference</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.TXSync.TXSyncSpedizioni" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncTXSyncClassTXSyncSpedizioniTopic.html" LinkGroup="TXSync">TXSyncSpedizioni Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.TXSync.TXSyncViaggi" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncTXSyncClassTXSyncViaggiTopic.html" LinkGroup="TXSync">TXSyncViaggi Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.TXSync_GetPianificazioni" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassTXSync_GetPianificazioniTopic.html" LinkGroup="TXSync">TXSync_GetPianificazioni Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.TXSync_LockPianificazioni" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassTXSync_LockPianificazioniTopic.html" LinkGroup="TXSync">TXSync_LockPianificazioni Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Pianificazione.TXSync_UnlockPianificazioni" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelPianificazioneClassTXSync_UnlockPianificazioniTopic.html" LinkGroup="TXSync">TXSync_UnlockPianificazioni Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.TXUpdate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassTXUpdateTopic.html" LinkGroup="TXSync">TXUpdate Method {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.TXUpdate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassTXUpdateTopic.html" LinkGroup="TXSync">TXUpdate Method {Volcano.TXSync.Model.Viaggio}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa.Tipo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassTipoTopic.html" LinkGroup="TXSync">Tipo Property {Volcano.TXSync.Model.NotaSpesa}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Tipo" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassTipoTopic.html" LinkGroup="TXSync">Tipo Property {Volcano.TXSync.Model.Spedizione}</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.TipoPianificazione" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelTipoPianificazioneClassTopic.html" LinkGroup="TXSync">TipoPianificazione Enumeration</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Serializer.UnserializeObject" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreSerializerClassUnserializeObjectTopic.html" LinkGroup="TXSync">UnserializeObject Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Serializer.UnserializeObjectList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreSerializerClassUnserializeObjectListTopic.html" LinkGroup="TXSync">UnserializeObjectList Method</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.UtenteCompetenza" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassUtenteCompetenzaTopic.html" LinkGroup="TXSync">UtenteCompetenza Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.NotaSpesa.Valuta" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelNotaSpesaClassValutaTopic.html" LinkGroup="TXSync">Valuta Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.Viaggio" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassctorTopic.html" LinkGroup="TXSync">Viaggio (System.Data.DataRow) Constructor</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio.Viaggio" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassctorTopic2.html" LinkGroup="TXSync">Viaggio (System.Int32) Constructor</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Viaggio" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelViaggioClassTopic.html" LinkGroup="TXSync">Viaggio Class</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSync.html" LinkGroup="TXSync">Volcano.TXSync Namespace</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCore.html" LinkGroup="TXSync">Volcano.TXSync.Core Namespace</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModel.html" LinkGroup="TXSync">Volcano.TXSync.Model Namespace</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Spedizione.Volume" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelSpedizioneClassVolumeTopic.html" LinkGroup="TXSync">Volume Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.XmlRequest" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassXmlRequestTopic.html" LinkGroup="TXSync">XmlRequest Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Model.Evento.XmlResponse" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncModelEventoClassXmlResponseTopic.html" LinkGroup="TXSync">XmlResponse Property</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Dao._connection" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDaoClass_connectionTopic.html" LinkGroup="TXSync">_connection Variable</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Dao._connectionString" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDaoClass_connectionStringTopic.html" LinkGroup="TXSync">_connectionString Variable</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.TXSync.log" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncTXSyncClasslogTopic.html" LinkGroup="TXSync">log Constant</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.TXSync.login" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncTXSyncClassloginTopic.html" LinkGroup="TXSync">login Variable</LItem>
+      </Links>
+   </Context>
+   <Context>
+      <Keywords>
+         <KItem Name="Volcano.TXSync.Core.Dao.~Dao" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:TXSync.chm::/frlrfVolcanoTXSyncCoreDaoClass~DaoTopicDao.html" LinkGroup="TXSync">~Dao Method</LItem>
+      </Links>
+   </Context>
+
+</DynamicHelp>
+
